@@ -11,13 +11,14 @@ class Game
         
         current_player = select_another? @player2
         while current_player.lives > 0 
-        # current_player = select_another? @player1
             Turn.new(current_player).run
-            current_player = select_another? current_player
             if current_player.lives == 0
                 puts "-------#{current_player.name} you lost------"
                 puts "-------Game Over---------"
             end
+        
+            current_player = select_another? current_player
+            
         end
     
     end
