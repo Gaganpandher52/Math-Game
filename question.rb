@@ -14,8 +14,4 @@ class Question
     def question_is?
         "What does #{@number_left} + #{@number_right} equal ?"
     end
-
-
-    
-
 end

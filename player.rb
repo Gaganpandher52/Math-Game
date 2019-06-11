@@ -9,8 +9,8 @@ class Player
     def lost_life
         @lives = @lives - 1
     end
-
-   
-    
+    def lost?
+        @lives <=0
+    end
 
 end
